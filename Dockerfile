@@ -1,3 +1,5 @@
-FROM node:14-alpine
+FROM ubuntu
 
-RUN apk add -U subversion
+RUN /bin/bash -c 'echo Hello Word'
+ENV myvar="This is sample mayank " \
+    othervar="This is also sample"
